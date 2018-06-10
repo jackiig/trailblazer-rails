@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "actionpack", '>= 3.0.0' # Rails is optional.
   spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "rubocop"
   # spec.add_development_dependency "responders"
 
   spec.add_development_dependency "multi_json"
