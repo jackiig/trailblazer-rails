@@ -15,7 +15,8 @@ module Trailblazer::Rails
       @_result = result
     end
 
-  private
+    private
+
     # Override to tweak params. Not recommended.
     # Use a deserializer instead.
     def _run_params(params)
@@ -36,7 +37,7 @@ module Trailblazer::Rails
     def _run_operation(operation, call_method, *dependencies)
       operation.send(
         call_method,
-        { params: _run_params(self.params) }.merge(*_run_runtime_options(*dependencies))
+        {params: _run_params(self.params)}.merge(*_run_runtime_options(*dependencies))
       )
     end
 
